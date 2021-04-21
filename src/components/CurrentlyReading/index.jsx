@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ReactComponent as ChapterIcon } from '../../assets/chapter.svg';
+import PatternCircleImg from '../../assets/pattern_circle.png';
 
 const ReadingContainer = styled.div`
     position: relative;
@@ -77,10 +78,45 @@ const ChapterActualInfo = styled.span`
     color: #FF6978;
 `;
 
+const Circle = styled.div`
+    position: absolute;
+    top: 22px;
+    right: -22px;
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    background-color: rgba(214, 209, 177, 0.09);
+`;
+
+const OpacBorderCircle = styled.div`
+    position: absolute;
+    top: -6px;
+    right: 90px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #4550A7;
+`;
+
+const Rectangle = styled.div`
+    position: absolute;
+    bottom: 20.5px;
+    right: -22.8px;
+    width: 46px;
+    height: 4px;
+    transform: rotate(14deg);
+    background-color: #EC6374;
+`;
+
+const PatternCircle = styled.img`
+    position: absolute;
+    top: -19px;
+    right: -33px;
+`;
+
 export default function CurrentlyReading(props) {
     return (
         <ReadingContainer>
-            <BookCoverImage src={props.image} alt={props.title} />
             <ReadingInfoContainer>
                 <ReadingInfoBookContainer>
                     <ReadingTitle>{props.title}</ReadingTitle>
@@ -91,6 +127,12 @@ export default function CurrentlyReading(props) {
                     <ChapterInfo>Chapter <ChapterActualInfo>{props.actualChapter}</ChapterActualInfo> from {props.totalChapters}</ChapterInfo>
                 </ReadingChapterInfo>
             </ReadingInfoContainer>
+
+            <BookCoverImage src={props.image} alt={props.title} />
+            <Circle />
+            <OpacBorderCircle />
+            <Rectangle />
+            <PatternCircle src={PatternCircleImg} alt='pattern-circle' />
         </ReadingContainer>
     );
 }

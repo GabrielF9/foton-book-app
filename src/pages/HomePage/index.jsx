@@ -17,6 +17,7 @@ export default function HomePage() {
         <HomeContainer>
             <ContentContainer>
                 <SearchBar />
+
                 <Saudation name='Mehmed Al Fatih' />
 
                 <ContentSection title='Discover new book' action='More' />
