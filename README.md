@@ -5,7 +5,7 @@ This project was made for the tech challenge of Foton company.
 ## Instructions
 
 ### Only view the app
-For only view the app, you can access this [link](https://www.google.com).
+For only view the app, you can access this [link](https://gabrielf9.github.io/foton-book-app).
 
 ### Run in your environment
 To run in your environment, clone this repository, open your favorite console in the project folder and run:
