@@ -11,6 +11,7 @@ export const ContentContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 `;
 
 export const ReviewImage = styled.img`

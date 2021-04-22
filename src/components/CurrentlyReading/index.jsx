@@ -47,7 +47,7 @@ const ReadingTitle = styled.span`
     color: #2A2B26;
 `;
 
-const ReadingAutor = styled.span`
+const ReadingAuthor = styled.span`
     margin-top: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
@@ -120,7 +120,7 @@ export default function CurrentlyReading(props) {
             <ReadingInfoContainer>
                 <ReadingInfoBookContainer>
                     <ReadingTitle>{props.title}</ReadingTitle>
-                    <ReadingAutor>{props.autor}</ReadingAutor>
+                    <ReadingAuthor>{props.author}</ReadingAuthor>
                 </ReadingInfoBookContainer>
                 <ReadingChapterInfo>
                     <ChapterIcon />
