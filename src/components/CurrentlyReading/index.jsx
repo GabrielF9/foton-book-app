@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { ReactComponent as ChapterIcon } from '../../assets/chapter.svg';
 import PatternCircleImg from '../../assets/pattern_circle.png';

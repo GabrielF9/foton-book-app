@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {
     ContentContainer,
     HomeContainer,
@@ -15,6 +16,8 @@ import CurrentlyReading from '../../components/CurrentlyReading';
 import DiscoverBooks from '../../components/DiscoverBooks';
 
 export default function HomePage() {
+    const [searchText, setSearchText] = useState('');
+
     const discoverBooksData = [
         {
             title: 'Hooked',
