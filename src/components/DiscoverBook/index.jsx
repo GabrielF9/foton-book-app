@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 import { ReactComponent as ChartIcon } from '../../assets/chart.svg';
 import TriangleImage from '../../assets/triangle.svg';
-
+import BigPatternCircle from '../../assets/big_pattern_circle.png';
+import history from '../../helpers/history';
 
 const DiscoverContainer = styled.div`
     position: relative;
@@ -12,6 +13,9 @@ const DiscoverContainer = styled.div`
     border-radius: 5px;
     background-color: ${props => props.bgColor};
     margin-right: 10px;
+    background-image: ${props => props.isMainDiscover ? `url(${BigPatternCircle})` : ''};
+    background-repeat: no-repeat;
+    background-position-y: bottom;
 `;
 
 const ContentContainer = styled.div`
@@ -108,8 +112,12 @@ const Triangle = styled.img`
 export default function DiscoverBook(props) {
     const { book, isMainDiscover } = props;
 
+    const goToBookDetails = () => {
+        if (book.id) history.push(`/details/${book.id}`);
+    }
+
     return (
-        <DiscoverContainer bgColor={book.bgColor} isMainDiscover={isMainDiscover}>
+        <DiscoverContainer onClick={goToBookDetails} bgColor={book.bgColor} isMainDiscover={isMainDiscover}>
             <ContentContainer>
                 <ContentSection>
                     <BookInfos>

@@ -9,7 +9,7 @@ export const getAllBooks = (searchText, offset = 0, maxResults = 10) => {
                 q: `intitle:${searchText}`,
                 startIndex: offset * maxResults,
                 maxResults,
-                fields: 'items(selfLink,volumeInfo(title,authors,imageLinks(thumbnail)))'
+                fields: 'items(id,volumeInfo(title,authors,imageLinks(thumbnail)))'
             }
         }).then((res) => {
             resolve(res.data);
@@ -19,9 +19,9 @@ export const getAllBooks = (searchText, offset = 0, maxResults = 10) => {
     });
 }
 
-export const getBook = (bookLink) => {
+export const getBook = (bookId) => {
     return new Promise((resolve, reject) => {
-        axios.get(bookLink).then((res) => {
+        axios.get(`${BASE_URL}/${bookId}`).then((res) => {
             resolve(res.data);
         }).catch((error) => {
             reject(error);

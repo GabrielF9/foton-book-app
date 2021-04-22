@@ -13,7 +13,7 @@ export default function App() {
   return (
     <HashRouter hashType={"noslash"}>
       <Switch>
-        <Route path="/details">
+        <Route path="/details/:bookId">
           <BookDetailsPage />
         </Route>
         <Route path="/">

@@ -11,6 +11,7 @@ const DiscoverContainer = styled.div`
     margin-top: 15px;
     padding-left: 20px;
     overflow-x: auto;
+    z-index: 1;
 `;
 
 export default function DiscoverBooks(props) {

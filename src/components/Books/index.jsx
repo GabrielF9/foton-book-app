@@ -19,7 +19,7 @@ export default function Books(props) {
 
     return (
         <ContentContainer>
-            {books.map((book, index) => <Book key={book.selfLink} book={book} />)}
+            {books.map((book, index) => <Book key={book.id} book={book} />)}
         </ContentContainer>
     );
 }
