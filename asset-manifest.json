@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/foton-book-app/static/css/main.7eb6beb3.chunk.css",
-    "main.js": "/foton-book-app/static/js/main.64d2ef3d.chunk.js",
-    "main.js.map": "/foton-book-app/static/js/main.64d2ef3d.chunk.js.map",
+    "main.js": "/foton-book-app/static/js/main.ecf8b266.chunk.js",
+    "main.js.map": "/foton-book-app/static/js/main.ecf8b266.chunk.js.map",
     "runtime-main.js": "/foton-book-app/static/js/runtime-main.e7e57c93.js",
     "runtime-main.js.map": "/foton-book-app/static/js/runtime-main.e7e57c93.js.map",
     "static/js/2.3a2d0ced.chunk.js": "/foton-book-app/static/js/2.3a2d0ced.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.e7e57c93.js",
     "static/js/2.3a2d0ced.chunk.js",
     "static/css/main.7eb6beb3.chunk.css",
-    "static/js/main.64d2ef3d.chunk.js"
+    "static/js/main.ecf8b266.chunk.js"
   ]
 }
