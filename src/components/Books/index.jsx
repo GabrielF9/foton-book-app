@@ -5,7 +5,7 @@ import Book from '../Book';
 const ContentContainer = styled.div`
     width: 100%;
     margin-top: 40px;
-    margin-bottom: calc(59px + 50px);
+    margin-bottom: 16px;
     padding-left: 20px;
     display: flex;
     flex-direction: row;
@@ -19,7 +19,7 @@ export default function Books(props) {
 
     return (
         <ContentContainer>
-            {books.map((book, index) => <Book key={book.id} book={book} />)}
+            {books.map((book) => book.volumeInfo.imageLinks && <Book key={book.id} book={book} />)}
         </ContentContainer>
     );
 }
