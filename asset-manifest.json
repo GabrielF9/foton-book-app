@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/foton-book-app/static/css/main.7eb6beb3.chunk.css",
+    "main.js": "/foton-book-app/static/js/main.64d2ef3d.chunk.js",
+    "main.js.map": "/foton-book-app/static/js/main.64d2ef3d.chunk.js.map",
+    "runtime-main.js": "/foton-book-app/static/js/runtime-main.e7e57c93.js",
+    "runtime-main.js.map": "/foton-book-app/static/js/runtime-main.e7e57c93.js.map",
+    "static/js/2.3a2d0ced.chunk.js": "/foton-book-app/static/js/2.3a2d0ced.chunk.js",
+    "static/js/2.3a2d0ced.chunk.js.map": "/foton-book-app/static/js/2.3a2d0ced.chunk.js.map",
+    "index.html": "/foton-book-app/index.html",
+    "static/css/main.7eb6beb3.chunk.css.map": "/foton-book-app/static/css/main.7eb6beb3.chunk.css.map",
+    "static/js/2.3a2d0ced.chunk.js.LICENSE.txt": "/foton-book-app/static/js/2.3a2d0ced.chunk.js.LICENSE.txt",
+    "static/media/back.b70b83da.svg": "/foton-book-app/static/media/back.b70b83da.svg",
+    "static/media/book-open.e15cd751.svg": "/foton-book-app/static/media/book-open.e15cd751.svg",
+    "static/media/book.9441b6f6.svg": "/foton-book-app/static/media/book.9441b6f6.svg",
+    "static/media/chapter.a7c47545.svg": "/foton-book-app/static/media/chapter.a7c47545.svg",
+    "static/media/chart.500800e0.svg": "/foton-book-app/static/media/chart.500800e0.svg",
+    "static/media/close.d4991dd8.svg": "/foton-book-app/static/media/close.d4991dd8.svg",
+    "static/media/current_book_img.77588b33.png": "/foton-book-app/static/media/current_book_img.77588b33.png",
+    "static/media/headphones.7fef522f.svg": "/foton-book-app/static/media/headphones.7fef522f.svg",
+    "static/media/home.7398720f.svg": "/foton-book-app/static/media/home.7398720f.svg",
+    "static/media/review_img.be733010.png": "/foton-book-app/static/media/review_img.be733010.png",
+    "static/media/search.8dce3bbe.svg": "/foton-book-app/static/media/search.8dce3bbe.svg",
+    "static/media/share.85556955.svg": "/foton-book-app/static/media/share.85556955.svg",
+    "static/media/triangle.5b0281d6.svg": "/foton-book-app/static/media/triangle.5b0281d6.svg",
+    "static/media/user.230a4de4.svg": "/foton-book-app/static/media/user.230a4de4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7e57c93.js",
+    "static/js/2.3a2d0ced.chunk.js",
+    "static/css/main.7eb6beb3.chunk.css",
+    "static/js/main.64d2ef3d.chunk.js"
+  ]
+}
