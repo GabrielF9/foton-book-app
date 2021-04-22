@@ -10,6 +10,7 @@ const BookContainer = styled.div`
     max-width: 105px;
     margin-right: 10px;
     margin-bottom: 12px;
+    cursor: pointer;
 `;
 
 const BookCover = styled.img`
