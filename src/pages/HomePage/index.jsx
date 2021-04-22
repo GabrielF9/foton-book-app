@@ -44,7 +44,6 @@ export default function HomePage() {
             return;
         }
 
-        console.log(event.target.value);
         setSearchText(event.target.value);
 
         if (event.target.value === '') {
@@ -53,7 +52,6 @@ export default function HomePage() {
     }
 
     const handleEnter = () => {
-        console.log('entrou enter');
         setFinalSearchText(searchText);
     }
 
