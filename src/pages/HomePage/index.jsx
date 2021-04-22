@@ -14,9 +14,11 @@ import CurrentBookImg from '../../assets/current_book_img.png';
 import HookedBookCover from '../../assets/hooked_book.png';
 import CurrentlyReading from '../../components/CurrentlyReading';
 import DiscoverBooks from '../../components/DiscoverBooks';
+import SearchPage from '../SearchPage';
 
 export default function HomePage() {
     const [searchText, setSearchText] = useState('');
+    const [finalSearchText, setFinalSearchText] = useState('');
 
     const discoverBooksData = [
         {
@@ -35,27 +37,52 @@ export default function HomePage() {
         }
     ];
 
+    const handleSearchText = (event, clear) => {
+        if (clear) {
+            setSearchText('');
+            setFinalSearchText('');
+            return;
+        }
+
+        console.log(event.target.value);
+        setSearchText(event.target.value);
+
+        if (event.target.value === '') {
+            setFinalSearchText('');
+        }
+    }
+
+    const handleEnter = () => {
+        console.log('entrou enter');
+        setFinalSearchText(searchText);
+    }
+
     return (
         <HomeContainer>
             <ContentContainer>
-                <SearchBar />
+                <SearchBar searchText={searchText} onChange={handleSearchText} handleEnter={handleEnter} />
 
-                <Saudation name='Mehmed Al Fatih' />
+                {
+                    !searchText ? <>
+                        <Saudation name='Mehmed Al Fatih' />
 
-                <ContentSection title='Discover new book' action='More' />
-                <DiscoverBooks data={discoverBooksData} />
+                        <ContentSection title='Discover new book' action='More' />
+                        <DiscoverBooks data={discoverBooksData} />
 
-                <ContentSection title='Currently Reading' action='All' />
-                <CurrentlyReading
-                    image={CurrentBookImg}
-                    title='Originals'
-                    author='by Adam Grant'
-                    actualChapter={2}
-                    totalChapters={9}
-                />
+                        <ContentSection title='Currently Reading' action='All' />
+                        <CurrentlyReading
+                            image={CurrentBookImg}
+                            title='Originals'
+                            author='by Adam Grant'
+                            actualChapter={2}
+                            totalChapters={9}
+                        />
 
-                <ContentSection title='Reviews of the Days' action='All Video' />
-                <ReviewImage src={ReviewImg} alt='review_img' />
+                        <ContentSection title='Reviews of the Days' action='All Video' />
+                        <ReviewImage src={ReviewImg} alt='review_img' />
+                    </>
+                        : <SearchPage searchText={finalSearchText} />
+                }
             </ContentContainer>
 
             <NavigationBar />
